@@ -19,17 +19,17 @@
   <body>
     <main>
       <div class="logo">
-        <img src="icons/logo.svg" alt="logo" />
+        <img src="icons/logo.svg" alt="" />
         <h1>quicklist</h1>
       </div>
 
-      <a href="index.html" class="text-link">Voltar </a>
+      <a href="index.html" class="text-link"> ← Voltar </a>
 
       <h2 class="text-title">Compras da semana</h2>
 
       <form class="add-item">
-        <input type="text" placeholder="Adicionar um novo item" />
-        <button>Adicionar item</button>
+        <input type="text" placeholder="Adicione um novo item" />
+        <button class="text-label">Adicionar item</button>
       </form>
 
       <ul class="list">
@@ -71,12 +71,12 @@
         </li>
       </ul>
 
-      <div class="removeItem">
-        <p class="text-paragraph">
-          <img src="icons/warning.png" alt="" />
-          O item foi removido da lista
+      <div class="alert">
+        <img src="icons/warning.png" alt="" />
+        <p class="text-paragraph">O item foi removido da lista</p>
+        <button aria-label="Fechar aviso">
           <img src="icons/close.png" alt="" />
-        </p>
+        </button>
       </div>
     </main>
   </body>
