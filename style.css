@@ -68,17 +68,33 @@ input {
   text-decoration: none;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding-top: 25px;
+  padding-bottom: 62px;
+}
+
+.back-button {
+  margin-left: 4px;
+}
+
+h2 {
+  margin-top: 16px;
+}
+
 .add-item {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 16px;
+  padding-top: 44px;
+  padding-left: 4px;
 }
 
 .add-item input {
   flex: 1;
-}
-
-input {
   height: 44px;
   color: var(--content-primary);
   background-color: var(--background-secondary);
