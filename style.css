@@ -195,3 +195,27 @@ label input[type="checkbox"]:checked {
   width: 16px;
   height: 16px;
 }
+
+.alert {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 12px;
+  margin-top: 36px;
+  border-radius: 12px;
+  background-color: var(--color-danger);
+  color: var(--always-white);
+}
+
+.alert img {
+  width: 11.5px;
+  height: 11.5px;
+}
+
+.alert button {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  cursor: pointer;
+  margin-left: auto;
+}
