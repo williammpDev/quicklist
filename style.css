@@ -64,6 +64,8 @@ input {
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
+  color: var(--color-brand);
+  text-decoration: none;
 }
 
 .add-item {
@@ -74,4 +76,42 @@ input {
 
 .add-item input {
   flex: 1;
+}
+
+input {
+  height: 44px;
+  color: var(--content-primary);
+  background-color: var(--background-secondary);
+  border: 1px solid var(--border-primary);
+  border-radius: 12px;
+  padding: 0 18px;
+  transition: border-color 0.2s;
+}
+
+input::placeholder {
+  color: var(--content-tertiary);
+}
+
+input:hover {
+  border-color: var(--border-hover);
+}
+
+input:focus {
+  border-color: var(--color-brand);
+  outline: none;
+}
+
+form button {
+  height: 44px;
+  color: var(--always-white);
+  background-color: var(--color-brand);
+  border: none;
+  border-radius: 12px;
+  padding: 0 18px;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: var(--color-brand-hover);
 }
