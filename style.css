@@ -223,3 +223,48 @@ label input[type="checkbox"]:checked {
   cursor: pointer;
   margin-left: auto;
 }
+
+.alert.hidden {
+  display: none;
+}
+
+/* Long item names wrap instead of pushing the trash button off-screen */
+.list label {
+  min-width: 0;
+}
+
+.list span {
+  overflow-wrap: anywhere;
+}
+
+label input[type="checkbox"],
+.list button,
+.alert img {
+  flex-shrink: 0;
+}
+
+.add-item input {
+  min-width: 0;
+}
+
+@media (max-width: 480px) {
+  .logo {
+    padding-bottom: 32px;
+  }
+
+  .add-item {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    padding: 24px 0;
+  }
+
+  .add-item input {
+    flex: none;
+  }
+
+  .alert {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+}
