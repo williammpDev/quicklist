@@ -2,7 +2,7 @@ const form = document.querySelector("form");
 const ul = document.querySelector("ul.list");
 const new_item = document.getElementById("new-item");
 
-// Manipulando o input new_item para receber somente letras
+// Prevent users from entering numbers in the input field
 new_item.addEventListener("input", () => {
   const hasCharactersRegex = /\d+/g;
   new_item.value = new_item.value.replace(hasCharactersRegex, "");
@@ -42,3 +42,15 @@ function addItemToList(item) {
 
   ul.appendChild(li);
 }
+
+// Event delegation for removing items
+ul.addEventListener("click", (event) => {
+  if (event.target.tagName === "BUTTON" || event.target.tagName === "IMG") {
+    const removeButton = event.target.closest(
+      'button[aria-label="Remover item"]',
+    );
+    if (!removeButton) return;
+
+    removeButton.closest("li").remove();
+  }
+});
